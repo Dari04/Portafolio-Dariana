@@ -1,0 +1,311 @@
+doctype html
+html
+  head
+    title Dari Portafolio
+    meta(charset='utf-8')
+    meta(name='description')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Ubuntu|Arimo|Poppins', type='text/css') 
+    link(href='https://fonts.googleapis.com/css?family=Roboto:500|Didact+Gothic', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:500|Didact+Gothic|Architects+Daughter', rel='stylesheet', type='text/css')
+    link(rel='icon', type='image/png', href='img/laptop-about.png')
+    link(rel='stylesheet', href='assets/css/bootstrap.min.css')
+    link(rel='stylesheet', href='assets/css/main.css')
+    link(rel='stylesheet', href='assets/css/animate.css')
+    link(rel='stylesheet', href='assets/css/ionicons.min.css')
+  body
+    mixin carrusel(src)
+      .col-xs-6
+        .item.animated3.zoomIn
+          .item-inner.imagen.all
+              img(src=src)        
+    header.header_area
+            nav#menu.navbar.navbar-default.navbar-fixed-top
+                .container
+                    .navbar-header
+                        button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+                            span.sr-only Toggle Navigation
+                            span.icon-bar
+                            .span.icon-bar
+                            span.icon-bar
+                        a.navbar-brand(href="#") Dari xD
+                    #navbar.navbar-collapse.collapse
+                        ul.nav.navbar-nav.navbar-right
+                            li
+                                a(href="#") Sobre Mí
+                            li
+                                a(href="#") Mi Portafolio
+                            li
+                                a(href="#") Habilidades
+                            li
+                                a(href="#") Contáctame
+    section.background
+        div.parent
+            canvas
+            div.texto
+                div#test Dariana Patiño
+                h1#holi 
+                  | Yo soy 
+                  span.txt-rotate(data-period='2000', data-rotate='[ "front-end developer", " creativa", "mujer" ]')
+                a.animated.infinite.ion-android-arrow-dropdown-circle( href="#")
+    section#sobre
+      .container-fluid
+        .title
+          h1 Sobre Mí
+        .row
+          .col-md-6
+            img.me(src='img/yo.jpg')
+          .col-md-6
+            p
+              |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est eos numquam ducimus, odit nam vel. Ipsam iusto a facilis sunt, dolorum, maxime ea voluptas esse ullam pariatur, maiores, quos.
+              |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est eos numquam ducimus, odit nam vel. Ipsam iusto a facilis sunt, dolorum, maxime ea voluptas esse ullam pariatur, maiores, quos.
+              |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est eos numquam ducimus, odit nam vel. Ipsam iusto a facilis sunt, dolorum, maxime ea voluptas esse ullam pariatur, maiores, quos.
+    section#frase
+      .opacity
+        .container
+          h1.animated3.zoomIn
+            | Si se puede imaginar... se puede programar. Soy mujer y me apasiona la tecnología.
+    //-section#Portafolio
+      .container-fluid
+        .title
+          h1 Mi Portafolio
+        .row.mt-10
+          .col-md-1(style='color:#34495E;')
+            .btn-group
+              a(href='#scroller', data-slide='next')
+                img(src='img/left.png')
+          .col-md-10
+            #scroller.carousel.slide
+              .second.carousel-inner
+                .item.active
+                  .row
+                    +carrusel('img/holi.jpg','holi')
+                    +carrusel('img/holi.jpg','holi')
+                    +carrusel('img/holi.jpg','holi')
+                .item
+                  .row
+                    +carrusel('img/holi.jpg','holi')
+                    +carrusel('img/holi.jpg','holi')
+                    +carrusel('img/holi.jpg','holi')
+          .col-md-1(style='color:#34495E;')
+            .btn-group
+              a(href='#scroller', data-slide='next')
+                img(src='img/right.png')
+    section#Portafolio
+      .container-fluid
+        .title
+          h1 Mi Portafolio
+        .controls
+          label Filter:
+          button.filter(data-filter='all') All
+          button.filter(data-filter='.category-1') Category 1
+          button.filter(data-filter='.category-2') Category 2
+        .pager-list
+          // Pagination buttons will be generated here
+        #Container.container
+          .view.view-second
+            .mix.category-1(data-myorder='1')
+              img.me(src='img/holi.jpg')
+              .mask
+              .content
+                h2 hola
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
+                a.info(href='#') Read More   
+          .view.view-second
+            .mix.category-1(data-myorder='2')
+              img.me(src='img/holi.jpg')
+              .mask
+              .content
+                h2 hola
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
+                a.info(href='#') Read More   
+          .view.view-second
+            .mix.category-1(data-myorder='3')
+              img.me(src='img/holi.jpg')
+              .mask
+              .content
+                h2 hola
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
+                a.info(href='#') Read More   
+          .view.view-second
+            .mix.category-2(data-myorder='4')
+              img.me(src='img/holi.jpg')
+              .mask
+              .content
+                h2 hola
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
+                a.info(href='#') Read More   
+          .view.view-second
+            .mix.category-1(data-myorder='5')
+              img.me(src='img/holi.jpg')
+              .mask
+              .content
+                h2 hola
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
+                a.info(href='#') Read More   
+          .view.view-second
+            .mix.category-1(data-myorder='6')
+              img.me(src='img/holi.jpg')
+              .mask
+              .content
+                h2 hola
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
+                a.info(href='#') Read More   
+          .view.view-second
+            .mix.category-2(data-myorder='7')
+              img.me(src='img/holi.jpg')
+              .mask
+              .content
+                h2 hola
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
+                a.info(href='#') Read More   
+          .view.view-second
+            .mix.category-2(data-myorder='8')
+              img.me(src='img/holi.jpg')
+              .mask
+              .content
+                h2 hola
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
+                a.info(href='#') Read More   
+          .gap
+          .gap
+    section#habilidades
+      .container-fluid
+        .title
+          h1 Habilidades
+        .unir
+          .row.mb-5
+            .col-md-3.col-sm-4
+              .efecto
+                i.ion-social-html5
+                h5.pt-5 HTML5
+                .progresed
+                  .progresed-indicator 80%
+                  .progresed-bar
+                    .progresed-bar-complete(style='width:90%')
+            .col-md-3.col-sm-4
+              .efecto
+                i.ion-social-css3
+                h5.pt-5 CCS3
+                .progresed
+                  .progresed-indicator 70%
+                  .progresed-bar
+                    .progresed-bar-complete(style='width:85%')
+            .col-md-3.col-sm-4
+              .efecto
+                i.ion-social-javascript.other-w
+                h5.pt-5 Javascript/Jquery
+                .progresed
+                  .progresed-indicator 30%
+                  .progresed-bar
+                    .progresed-bar-complete(style='width:40%')
+            .col-md-3.col-sm-4
+              .efecto
+                i.ion-social-octocat
+                h5.pt-5 Git/Github
+                .progresed
+                  .progresed-indicator 40%
+                  .progresed-bar
+                    .progresed-bar-complete(style='width:60%')
+          .row.mb-5
+            .col-md-3.col-sm-4
+              .efecto
+                i.ion-social-sass
+                h5.pt-5 SASS
+                .progresed
+                  .progresed-indicator 50%
+                  .progresed-bar
+                    .progresed-bar-complete(style='width:67%')
+            .col-md-3.col-sm-4
+              .efecto
+                .bg-circle
+                  img.img-responsive(src='img/jade.png')
+                h5.pt-5.letter(style='margin-top: 4px;') JADE
+                .progresed
+                  .progresed-indicator 40%
+                  .progresed-bar
+                    .progresed-bar-complete(style='width:64%')
+            .col-md-3.col-sm-4
+              .efecto
+                .bg-circle
+                  img.img-responsive(src='img/bootstrap.png')
+                h5.pt-5(style='margin-top: 4px;') Bootstrap/Responsive
+                .progresed
+                  .progresed-indicator 50%
+                  .progresed-bar
+                    .progresed-bar-complete(style='width:80%')
+            .col-md-3.col-sm-4
+              .efecto
+                i.ion-social-wordpress
+                h5.pt-5 Wordpress
+                .progresed
+                  .progresed-indicator 50%
+                  .progresed-bar
+                    .progresed-bar-complete(style='width:50%')
+    section#Fotos
+      .container-fluid
+        .title
+          h1 Galería de fotos
+        .row.mt-10
+          .col-md-1(style='color:#34495E;')
+            .btn-group
+              a(href='#scroller', data-slide='next')
+                img(src='img/left.png')
+          .col-md-10
+            #scroller.carousel.slide
+              .second.carousel-inner
+                .item.active
+                  .row
+                    +carrusel('img/foto1.jpg')
+                    +carrusel('img/foto2.jpg')
+                .item
+                  .row
+                    +carrusel('img/foto3.jpg')
+                    +carrusel('img/foto4.jpg')
+                .item
+                  .row
+                    +carrusel('img/foto5.jpg')
+                    +carrusel('img/foto6.jpg')
+          .col-md-1(style='color:#34495E;')
+            .btn-group
+              a(href='#scroller', data-slide='next')
+                img(src='img/right.png')
+    section#contactame
+      .container-fluid
+        .title
+          h1 Contáctame
+        .box.animated.bounceIn
+          p
+            | Me parece excelente que hayas llegado hasta aquí, si tienes un proyecto y 
+            br
+            | te gustaría trabajar conmigo, no dudes en enviarme un correo electrónico para poder trabajar juntos.
+          p
+            i.ion-android-mail
+            | ingrid.dariana.patino@gmail.com
+          p
+            i.ion-android-phone-portrait
+            | 949 170 002
+          .circle
+            a(href='https://github.com/Dari04')
+              i.ion-social-github
+            a(href='https://www.facebook.com/pdariiana')
+              i.ion-social-facebook
+            a(href='https://www.linkedin.com/in/ingrid-dariana-pati%C3%B1o-268469120?trk=nav_responsive_tab_profile_pic')
+              i.ion-social-linkedin
+            a(href='https://twitter.com/DariPatino04')
+              i.ion-social-twitter
+    footer
+      div#maquinas
+      p Copyright © Dariana Patiño Portafolio 2016.
+  //-no olvidar poner codigo para poner cv//
+  script(src='js/jquery.js')
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+  script(src='http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+  script(src='js/index.js')
+  script(src='js/canvas.js')
+  script(src='js/maquina.js')
+  script(src='js/menu-scroll.js')
+  script(src='js/bootstrap.min.js')
+  script(src='js/cbpAnimated.js')

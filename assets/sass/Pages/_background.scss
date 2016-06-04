@@ -1,0 +1,42 @@
+.background{
+	background-color:black;
+
+	.parent{
+		position:relative;
+		canvas{
+		width:100%;
+		}
+		.texto{
+			position: absolute;
+    		left: 390px;
+    		top: 220px;
+			#test{
+				color: white;
+			    text-align: center;
+			    position: relative;
+			    left: 0px;
+			    font-family: "Didact Gothic";
+			    font-size: 6em;
+			    margin: auto;
+			    display: block;
+			    top:0px;
+			}
+			#holi{
+				    color: white;
+				    text-align: center;
+				    position: relative;
+				    left: 0;
+				    font-family:"Poppins";
+				    font-size: 3em;
+			}
+					}
+	}
+}
+.ion-android-arrow-dropdown-circle{
+				    color: #ffffff;
+			    text-decoration: none;
+			    font-size: 4em;
+			    position: relative;
+			    left: 237px;
+			    top: 109px;
+			}

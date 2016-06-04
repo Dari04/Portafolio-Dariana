@@ -1,0 +1,21 @@
+@import "Helpers/_mixins";
+@import "Layout/_header";
+@import "Pages/_background";
+@import "Pages/_sobre";
+@import "Pages/_frase";
+@import "Pages/_portafolio";
+@import "Pages/_habilidades";
+@import "Pages/_contactame";
+@import "Pages/_fotos";
+@import "Layout/_footer";
+::-moz-selection { color: white;  background: #0DC0C0; }
+::selection      { color: white;  background: #0DC0C0; } 
+
+/* dibuja el texto seleccionado en un parrafo de color blanco y negro*/
+p::-moz-selection { color: white;  background: #0DC0C0;}
+p::selection      { color: white;  background: #0DC0C0; }
+body{cursor:url(../../img/cursor.png), auto;}
+
+body{
+	color:#3E5196;
+}

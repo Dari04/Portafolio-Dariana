@@ -1,0 +1,23 @@
+#Fotos{
+		background-color:#FFFFFF;
+		.container-fluid{
+	    padding-bottom: 80px;		 
+	    .title{
+		 	@include title;
+		    margin-top: 55px;
+	    	  h1{
+	    	@include title-h1;
+			}
+		}
+		a{
+			img{
+				margin-top: 162px;
+			}
+		}
+		.imagen{
+			img{
+				width: 100%;
+			}
+		}
+	}
+}

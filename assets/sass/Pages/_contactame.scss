@@ -1,0 +1,43 @@
+#contactame{
+	background-image: url("../../img/fondogris.png");
+	padding-bottom: 11.6%;
+	.title{
+		@include title;
+	    margin-top: 55px;
+    	  h1{
+    	@include title-h1;
+		}
+	}
+	.box{
+    	background-image: url("../../img/webcontact.png");
+	    height: 321px;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    p{
+	    	position: relative;
+	    	text-align: center;
+		    font-size: 1.5em;
+		    top: 41px;
+		    font-family: "Didact Gothic";
+		    font-weight:bold;
+		    i{
+		    	margin-right:10px;
+		    }
+	    }
+	    .circle{
+	    	text-align: center;
+	    	margin-top: 41px;
+	    	a{
+	    		margin-right: 30px;
+	    		i{
+	    			font-size: 6.6em;
+	    			color: #3E5196;
+				    font-size: 6.6em;
+				    &:hover{
+				    text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
+				    }
+	    		}
+	    	}
+	    }
+	}
+}

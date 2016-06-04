@@ -1,0 +1,25 @@
+#sobre{
+  text-align: center;
+  background-color:#FFFFFF;
+  padding-bottom: 1.2%;
+  .title{
+	  	@include title;
+	    margin-top: 50px;
+    	h1{
+    	@include title-h1;
+	}
+}
+.me{
+	float: right;
+}
+	p{
+	width: 42%;
+	font-size: 1 7px;
+	position: relative;
+	top: 21px;
+	font-weight:bold;
+	font-family:"Didact Gothic";
+	}
+
+
+}
