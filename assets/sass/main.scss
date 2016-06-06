@@ -14,8 +14,38 @@
 /* dibuja el texto seleccionado en un parrafo de color blanco y negro*/
 p::-moz-selection { color: white;  background: #0DC0C0;}
 p::selection      { color: white;  background: #0DC0C0; }
+
 body{cursor:url(../../img/cursor.png), auto;}
 
 body{
-	color:#3E5196;
+	color:#009ca8;
 }
+::-webkit-scrollbar{
+  width: 11px;
+  background: #ffffff;
+}
+::-webkit-scrollbar-button{
+  width:8px;
+  height: 5px;
+}
+::-webkit-scrollbar-track{
+  background:#ffffff;
+  border:thin solid #009ca8;
+  -webkit-box-shadow: inset black;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb{
+  background: #2F9290;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #009ca8;
+	transition: all 1s ease;
+}
+/* Pseudo-clase */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(77,161,112,.6);
+}
+

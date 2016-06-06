@@ -1,5 +1,6 @@
 #habilidades{
 	background-image: url("../../img/fondogris2.jpg");
+	background-attachment: fixed;
     text-align: center;
     background-repeat: no-repeat;
     padding-bottom: 65px;
@@ -55,13 +56,11 @@
 		background: white;
 		padding: 23px 35px;
 		border-radius: 100%;
-		border:2px solid #009ca8;
 		&:hover {
 			background-image: url("../../img/fondopaint.png");
 			background-color: #ffffff;
 			color:#009ca8;
 			transition: 0.4s;
-			border: 2px dashed #009ca8;
 		}
 	}
 	.letter{
@@ -73,13 +72,10 @@
     background-color: white;
     padding:29px 34px 33px 35px;
     display: inline-block;
-    border: 2px solid #009ca8;
     margin-top: -18px;
     &:hover{
     	background-image: url("../../img/fondopaint.png");
-		transition: 0.4s;
-		border: 2px dashed #009ca8;
-    }
+		transition: 0.4s;    }
 }
 .img-responsive{
 	display: block;

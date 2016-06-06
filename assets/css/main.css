@@ -13,11 +13,9 @@ header .navbar-default .navbar-nav > li > a {
   font-weight: bold;
   letter-spacing: 1px;
   color: white; }
-  header .navbar-default .navbar-nav > li > a:hover {
-    color: #000000; }
 
 #menu.active {
-  background-color: #009ca8;
+  background-color: #000000;
   padding: 6px 0;
   webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -47,7 +45,7 @@ header .navbar-default .navbar-nav > li > a {
         color: white;
         text-align: center;
         position: relative;
-        left: 0px;
+        left: 15px;
         font-family: "Didact Gothic";
         font-size: 6em;
         margin: auto;
@@ -66,12 +64,13 @@ header .navbar-default .navbar-nav > li > a {
   text-decoration: none;
   font-size: 4em;
   position: relative;
-  left: 237px;
+  left: 256px;
   top: 109px; }
 
 #sobre {
   text-align: center;
-  background-color: #FFFFFF;
+  background-image: url("../../img/textura.jpg");
+  background-attachment: fixed;
   padding-bottom: 1.2%; }
   #sobre .title {
     display: block;
@@ -82,7 +81,7 @@ header .navbar-default .navbar-nav > li > a {
     background-repeat: no-repeat;
     margin-top: 50px; }
     #sobre .title h1 {
-      font-size: 2.1em;
+      font-size: 1.9em;
       font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
       width: 100%;
       letter-spacing: 2px;
@@ -90,7 +89,7 @@ header .navbar-default .navbar-nav > li > a {
       max-width: 1250px;
       text-align: center;
       position: relative;
-      bottom: 61px; }
+      bottom: 56px; }
   #sobre .me {
     float: right; }
   #sobre p {
@@ -102,7 +101,7 @@ header .navbar-default .navbar-nav > li > a {
     font-family: "Didact Gothic"; }
 
 #frase {
-  background-image: url("../../img/frase.jpg");
+  background-image: url("../../img/codigo.jpg");
   background-size: cover;
   background-attachment: fixed; }
   #frase .opacity {
@@ -112,13 +111,14 @@ header .navbar-default .navbar-nav > li > a {
       font-size: 4em;
       text-align: center;
       color: #ffffff;
-      text-shadow: -2px -2px 1px #3E5196, 1px -2px 1px #3E5196, -2px 1px 1px #3E5196, 1px 2px 1px #3E5196;
+      text-shadow: -2px -2px 1px rgba(0, 0, 0, 0.16), 1px -2px 1px rgba(0, 0, 0, 0.16), -2px 1px 1px rgba(0, 0, 0, 0.16), 1px 2px 1px rgba(0, 0, 0, 0.16);
       z-index: 1;
       padding-top: 113px;
-      font-family: "Architects Daughter"; }
+      font-family: "Didact Gothic"; }
 
 #Portafolio {
-  background-image: #FFFFFF; }
+  background-image: url("../../img/textura.jpg");
+  background-attachment: fixed; }
   #Portafolio .container-fluid {
     padding-bottom: 80px; }
     #Portafolio .container-fluid .title {
@@ -130,7 +130,7 @@ header .navbar-default .navbar-nav > li > a {
       background-repeat: no-repeat;
       margin-top: 55px; }
       #Portafolio .container-fluid .title h1 {
-        font-size: 2.1em;
+        font-size: 1.9em;
         font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
         width: 100%;
         letter-spacing: 2px;
@@ -138,7 +138,7 @@ header .navbar-default .navbar-nav > li > a {
         max-width: 1250px;
         text-align: center;
         position: relative;
-        bottom: 61px; }
+        bottom: 56px; }
     #Portafolio .container-fluid .btn-group {
       margin-top: 74px; }
     #Portafolio .container-fluid .controls {
@@ -341,6 +341,7 @@ header .navbar-default .navbar-nav > li > a {
 
 #habilidades {
   background-image: url("../../img/fondogris2.jpg");
+  background-attachment: fixed;
   text-align: center;
   background-repeat: no-repeat;
   padding-bottom: 65px; }
@@ -353,7 +354,7 @@ header .navbar-default .navbar-nav > li > a {
     background-repeat: no-repeat;
     margin-top: 55px; }
     #habilidades .title h1 {
-      font-size: 2.1em;
+      font-size: 1.9em;
       font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
       width: 100%;
       letter-spacing: 2px;
@@ -361,7 +362,7 @@ header .navbar-default .navbar-nav > li > a {
       max-width: 1250px;
       text-align: center;
       position: relative;
-      bottom: 61px; }
+      bottom: 56px; }
   #habilidades h5 {
     font-weight: 700;
     color: #3E5196;
@@ -400,14 +401,12 @@ header .navbar-default .navbar-nav > li > a {
     color: #009ca8;
     background: white;
     padding: 23px 35px;
-    border-radius: 100%;
-    border: 2px solid #009ca8; }
+    border-radius: 100%; }
     .efecto i:hover {
       background-image: url("../../img/fondopaint.png");
       background-color: #ffffff;
       color: #009ca8;
-      transition: 0.4s;
-      border: 2px dashed #009ca8; }
+      transition: 0.4s; }
   .efecto .letter {
     margin-top: 0px; }
 
@@ -416,12 +415,10 @@ header .navbar-default .navbar-nav > li > a {
   background-color: white;
   padding: 29px 34px 33px 35px;
   display: inline-block;
-  border: 2px solid #009ca8;
   margin-top: -18px; }
   .bg-circle:hover {
     background-image: url("../../img/fondopaint.png");
-    transition: 0.4s;
-    border: 2px dashed #009ca8; }
+    transition: 0.4s; }
 
 .img-responsive {
   display: block;
@@ -465,7 +462,7 @@ header .navbar-default .navbar-nav > li > a {
     background-repeat: no-repeat;
     margin-top: 55px; }
     #contactame .title h1 {
-      font-size: 2.1em;
+      font-size: 1.9em;
       font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
       width: 100%;
       letter-spacing: 2px;
@@ -473,7 +470,7 @@ header .navbar-default .navbar-nav > li > a {
       max-width: 1250px;
       text-align: center;
       position: relative;
-      bottom: 61px; }
+      bottom: 56px; }
   #contactame .box {
     background-image: url("../../img/webcontact.png");
     height: 321px;
@@ -495,13 +492,14 @@ header .navbar-default .navbar-nav > li > a {
         margin-right: 30px; }
         #contactame .box .circle a i {
           font-size: 6.6em;
-          color: #3E5196;
+          color: #009ca8;
           font-size: 6.6em; }
           #contactame .box .circle a i:hover {
             text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000; }
 
 #Fotos {
-  background-color: #FFFFFF; }
+  background-image: url("../../img/textura.jpg");
+  background-attachment: fixed; }
   #Fotos .container-fluid {
     padding-bottom: 80px; }
     #Fotos .container-fluid .title {
@@ -513,7 +511,7 @@ header .navbar-default .navbar-nav > li > a {
       background-repeat: no-repeat;
       margin-top: 55px; }
       #Fotos .container-fluid .title h1 {
-        font-size: 2.1em;
+        font-size: 1.9em;
         font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
         width: 100%;
         letter-spacing: 2px;
@@ -521,7 +519,7 @@ header .navbar-default .navbar-nav > li > a {
         max-width: 1250px;
         text-align: center;
         position: relative;
-        bottom: 61px; }
+        bottom: 56px; }
     #Fotos .container-fluid a img {
       margin-top: 162px; }
     #Fotos .container-fluid .imagen img {
@@ -558,6 +556,34 @@ body {
   cursor: url(../../img/cursor.png), auto; }
 
 body {
-  color: #3E5196; }
+  color: #009ca8; }
+
+::-webkit-scrollbar {
+  width: 11px;
+  background: #ffffff; }
+
+::-webkit-scrollbar-button {
+  width: 8px;
+  height: 5px; }
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: thin solid #009ca8;
+  -webkit-box-shadow: inset black;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+
+::-webkit-scrollbar-thumb {
+  background: #2F9290;
+  border-radius: 6px;
+  -webkit-border-radius: 6px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #009ca8;
+  transition: all 1s ease; }
+
+/* Pseudo-clase */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(77, 161, 112, 0.6); }
 
 /*# sourceMappingURL=main.css.map */
