@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Arimo|Poppins" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500|Didact+Gothic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500|Didact+Gothic|Architects+Daughter" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script" type="text/css">
     <link rel="icon" type="image/png" href="img/laptop-about.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -22,14 +23,14 @@
           <div class="navbar-header">
             <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span>
               <div class="span icon-bar"></div><span class="icon-bar"></span>
-            </button><a href="#" class="navbar-brand">Dariana </a>
+            </button><a href="#" class="navbar-brand">+D</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Sobre Mí</a></li>
-              <li><a href="#">Mi Portafolio</a></li>
-              <li><a href="#">Habilidades</a></li>
-              <li><a href="#">Contáctame</a></li>
+              <li><a href="#sobre">Sobre Mí</a></li>
+              <li><a href="#Portafolio">Mi Portafolio</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#contactame">Contáctame</a></li>
             </ul>
           </div>
         </div>
@@ -43,9 +44,17 @@
           <h1 id="holi">
              
             Yo soy <span data-period="2000" data-rotate="[ &quot;desarrolladora&quot;, &quot; creativa&quot;, &quot;mujer&quot; ]" class="txt-rotate"></span>
-          </h1><a href="#" class="animated infinite ion-android-arrow-dropdown-circle"></a>
+          </h1><a href="#sobre" class="animated infinite ion-android-arrow-dropdown-circle"></a>
         </div>
       </div>
+    </section>
+    <section id="social">
+      <ul>
+        <li><a href="https://www.facebook.com/pdariiana" target="_blank" class="ion-social-facebook"></a></li>
+        <li><a href="https://plus.google.com/u/0/110076452427834762187/posts" target="_blank" class="ion-social-googleplus"></a></li>
+        <li> <a href="https://github.com/Dari04" target="_blank" class="ion-social-github"></a></li>
+        <li><a href="https://www.facebook.com/pdariiana" target="_blank" class="ion-social-linkedin"></a></li>
+      </ul>
     </section>
     <section id="sobre">
       <div class="container-fluid">
@@ -53,21 +62,67 @@
           <h1>Sobre Mí</h1>
         </div>
         <div class="row">
-          <div class="col-md-6"><img src="img/yo.jpg" class="me"></div>
-          <div class="col-md-6">
+          <div class="col-md-7">
+            <figure class="letters">
+              <figcaption class="letters1">
+                <p><span class="gib">Dariana Patiño</span> Front-End Developer</p>
+              </figcaption><img src="img/yo.jpg" class="me">
+            </figure>
+          </div>
+          <div class="col-md-5">
             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est eos numquam ducimus, odit nam vel. Ipsam iusto a facilis sunt, dolorum, maxime ea voluptas esse ullam pariatur, maiores, quos.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est eos numquam ducimus, odit nam vel. Ipsam iusto a facilis sunt, dolorum, maxime ea voluptas esse ullam pariatur, maiores, quos.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est eos numquam ducimus, odit nam vel. Ipsam iusto a facilis sunt, dolorum, maxime ea voluptas esse ullam pariatur, maiores, quos.
+              Hola soy Dariana Patiño, tengo 20 años ,soy egresada  de Desarrollo Web de Laboratoria.
+              Tengo facilidad para trabajar en grupo, soy autodidacta, responsanble, full pilas y energía positiva al momento de trabajar, dando el 100% en cada trabajo.  
             </p>
           </div>
         </div>
       </div>
     </section>
+    <section id="curriculum">
+      <div class="container-fluid">
+        <div class="title">
+          <h1>Curriculum Vitae</h1>
+        </div>
+        <div class="component"></div>
+        <ul class="align">
+          <li>
+            <figure class="book">
+              <!-- Front-->
+              <ul class="hardcover_front">
+                <li>
+                  <div class="coverDesign blue"></div>
+                </li>
+                <li></li>
+              </ul>
+              <!-- Pages-->
+              <ul class="page">
+                <li></li>
+                <li><a href="docs/CV Dariana.pdf" class="btn">Descargar</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <!-- Back-->
+              <ul class="hardcover_back">
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="book_spine">
+                <li></li>
+                <li></li>
+              </ul>
+              <figcaption class="one">
+                <p>Si deseas saber más sobre mi formación académica, abre el libro y descarga mi CV. </p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section id="frase">
       <div class="opacity">
         <div class="container">
-          <h1 class="animated3 zoomIn">Si se puede imaginar... se puede programar. Soy mujer y me apasiona la tecnología.</h1>
+          <h1 class="animated3 zoomIn word"></h1>
         </div>
       </div>
     </section>
@@ -78,83 +133,91 @@
         </div>
         <div class="controls">
           <label>Filter:</label>
-          <button data-filter="all" class="filter">All</button>
-          <button data-filter=".category-1" class="filter">Category 1</button>
-          <button data-filter=".category-2" class="filter">Category 2</button>
+          <button data-filter="all" class="filter">Trabajos</button>
+          <button data-filter=".category-1" class="filter">Html*Css - Jade*Sass</button>
+          <button data-filter=".category-2" class="filter">Javascript*Jquery</button>
         </div>
         <div class="pager-list">
           <!-- Pagination buttons will be generated here-->
         </div>
         <div id="Container" class="container">
           <div class="view view-second">
-            <div data-myorder="1" class="mix category-1"><img src="img/holi.jpg" class="me">
+            <div data-myorder="1" class="mix category-1"><img src="img/trabajo1.jpg" class="me">
               <div class="mask"></div>
               <div class="content">
-                <h2>hola</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.</p><a href="#" class="info">Read More   </a>
+                <h2>Agency Theme</h2>
+                <p> Herramientas: Precompiladores Jade y Sass.</p>
+                <p> Páginas: 01.</p><a href="https:///Dari04.github.io/Agency-theme/index.html" class="info">Click aquí  </a>
               </div>
             </div>
           </div>
           <div class="view view-second">
-            <div data-myorder="2" class="mix category-1"><img src="img/holi.jpg" class="me">
+            <div data-myorder="2" class="mix category-1"><img src="img/trabajo2.jpg" class="me">
               <div class="mask"></div>
               <div class="content">
-                <h2>hola</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.</p><a href="#" class="info">Read More   </a>
+                <h2>Flat Theme</h2>
+                <p> Herramientas: Precompiladores Jade y Sass.</p>
+                <p> Páginas: 05.</p><a href class="info">Click aquí   </a>
               </div>
             </div>
           </div>
           <div class="view view-second">
-            <div data-myorder="3" class="mix category-1"><img src="img/holi.jpg" class="me">
+            <div data-myorder="3" class="mix category-1"><img src="img/trabajo3.jpg" class="me">
               <div class="mask"></div>
               <div class="content">
-                <h2>hola</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.</p><a href="#" class="info">Read More   </a>
+                <h2>Grid System Responsive</h2>
+                <p> Herramientas: HTML, CSS y Framework Bootstrap.</p>
+                <p> Páginas: 01.</p><a href="https://Dari04.github.io/Grid-system-responsive/index.html" class="info">Click aquí   </a>
               </div>
             </div>
           </div>
           <div class="view view-second">
-            <div data-myorder="4" class="mix category-2"><img src="img/holi.jpg" class="me">
+            <div data-myorder="4" class="mix category-1"><img src="img/trabajo4.jpg" class="me">
               <div class="mask"></div>
               <div class="content">
-                <h2>hola</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.</p><a href="#" class="info">Read More   </a>
+                <h2>Sentient Proyect</h2>
+                <p> Herramientas:  HTML, CSS y Framework Materialized.</p>
+                <p> Páginas: 01.</p><a href="https://dari04.github.io/Sentient-Proyect/index.html" class="info">Click aquí   </a>
               </div>
             </div>
           </div>
           <div class="view view-second">
-            <div data-myorder="5" class="mix category-1"><img src="img/holi.jpg" class="me">
+            <div data-myorder="5" class="mix category-1"><img src="img/trabajo5.jpg" class="me">
               <div class="mask"></div>
               <div class="content">
-                <h2>hola</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.</p><a href="#" class="info">Read More   </a>
+                <h2>Responsive Flatness</h2>
+                <p> Herramientas:  HTML, CSS y Framework Bootstrap.</p>
+                <p> Páginas: 01.</p><a href="https://dari04.github.io/Responsive--blog/index.html" class="info">Click aquí   </a>
               </div>
             </div>
           </div>
           <div class="view view-second">
-            <div data-myorder="6" class="mix category-1"><img src="img/holi.jpg" class="me">
+            <div data-myorder="6" class="mix category-1"><img src="img/trabajo6.jpg" class="me">
               <div class="mask"></div>
               <div class="content">
-                <h2>hola</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.</p><a href="#" class="info">Read More   </a>
+                <h2>Loveblog</h2>
+                <p> Herramientas:  HTML, SASS y Framework Bootstrap.</p>
+                <p> Páginas: 05.</p><a href="https://LoveBlog.github.io/Dari04/index.html" class="info">Click aquí   </a>
               </div>
             </div>
           </div>
           <div class="view view-second">
-            <div data-myorder="7" class="mix category-2"><img src="img/holi.jpg" class="me">
+            <div data-myorder="7" class="mix category-2"><img src="img/trabajo7.jpg" class="me">
               <div class="mask"></div>
               <div class="content">
-                <h2>hola</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.</p><a href="#" class="info">Read More   </a>
+                <h2>TIC TAC TOE</h2>
+                <p> Herramientas: HTML, CSS y Jquery.</p>
+                <p> Páginas: 01.</p><a href="https://dari04.github.io/TIC-TAC-TOE/index.html" class="info">Click aquí   </a>
               </div>
             </div>
           </div>
           <div class="view view-second">
-            <div data-myorder="8" class="mix category-2"><img src="img/holi.jpg" class="me">
+            <div data-myorder="8" class="mix category-2"><img src="img/trabajo8.jpg" class="me">
               <div class="mask"></div>
               <div class="content">
-                <h2>hola</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.</p><a href="#" class="info">Read More   </a>
+                <h2>TODO APP</h2>
+                <p> Herramientas: HTML, CSS y Javascript.</p>
+                <p> Páginas: 01.</p><a href="https://dari04.github.io/TO-DO-APP/index.html" class="info">Click aquí   </a>
               </div>
             </div>
           </div>
@@ -185,7 +248,7 @@
               <div class="efecto"><i class="ion-social-css3"></i>
                 <h5 class="pt-5">CCS3</h5>
                 <div class="progresed">
-                  <div class="progresed-indicator">70%</div>
+                  <div class="progresed-indicator">80%</div>
                   <div class="progresed-bar">
                     <div style="width:85%" class="progresed-bar-complete"></div>
                   </div>
@@ -196,7 +259,7 @@
               <div class="efecto"><i class="ion-social-javascript other-w"></i>
                 <h5 class="pt-5">Javascript/Jquery</h5>
                 <div class="progresed">
-                  <div class="progresed-indicator">30%</div>
+                  <div class="progresed-indicator">25%</div>
                   <div class="progresed-bar">
                     <div style="width:40%" class="progresed-bar-complete"></div>
                   </div>
@@ -220,7 +283,7 @@
               <div class="efecto"><i class="ion-social-sass"></i>
                 <h5 class="pt-5">SASS</h5>
                 <div class="progresed">
-                  <div class="progresed-indicator">50%</div>
+                  <div class="progresed-indicator">70%</div>
                   <div class="progresed-bar">
                     <div style="width:67%" class="progresed-bar-complete"></div>
                   </div>
@@ -232,7 +295,7 @@
                 <div class="bg-circle"><img src="img/jade.png" class="img-responsive"></div>
                 <h5 style="margin-top: 4px;" class="pt-5 letter">JADE</h5>
                 <div class="progresed">
-                  <div class="progresed-indicator">40%</div>
+                  <div class="progresed-indicator">60%</div>
                   <div class="progresed-bar">
                     <div style="width:64%" class="progresed-bar-complete"></div>
                   </div>
@@ -244,7 +307,7 @@
                 <div class="bg-circle"><img src="img/bootstrap.png" class="img-responsive"></div>
                 <h5 style="margin-top: 4px;" class="pt-5">Bootstrap/Responsive</h5>
                 <div class="progresed">
-                  <div class="progresed-indicator">50%</div>
+                  <div class="progresed-indicator">75%</div>
                   <div class="progresed-bar">
                     <div style="width:80%" class="progresed-bar-complete"></div>
                   </div>
@@ -352,9 +415,12 @@
   <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
+  <script src="js/tipeo.js"></script>
   <script src="js/canvas.js"></script>
   <script src="js/maquina.js"></script>
   <script src="js/menu-scroll.js"></script>
+  <script src="js/cbpAnimatedHeader.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/hover.js"></script>
   <script src="js/cbpAnimated.js"></script>
 </html>

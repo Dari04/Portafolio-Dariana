@@ -10,28 +10,30 @@
 	    	@include title-h1;
 			}
 		}
+
 		.btn-group{
 			    margin-top: 74px;
 	    }
 	    .controls {
-	    padding: 2%;
-	    color: #eee;
-	    text-align: center;
+	        padding-bottom: 1.6%;
+		    color: #eee;
+		    text-align: left;
 		}
 		label {
 			font-weight: 300;
 			margin: 0 .4em 0 0;
 		}
 		button {
+			    font-weight: bold;
 			    display: inline-block;
 			    padding: .4em .8em;
 			    background: #fff;
-			    border: 1px solid #000000;
 			    color: #000000;
 			    font-size: 16px;
-			    font-weight: 300;
+			    font-weight: bold;
 			    border-radius: 4px;
 			    cursor: pointer;
+			    font-family: "Didact Gothic", "Helvetica Neue", Helvetica, Arial, cursive;
 			&:focus {
 				outline: 0 none;
 			}
@@ -43,6 +45,7 @@
 		}
 		button.active {
 			background: #68b8c4;
+			color:#ffffff;
 		}
 		.container{
 				content: '';
@@ -118,7 +121,6 @@
 	overflow: hidden;
 	position: relative;
 	text-align: center;
-	box-shadow: 1px 1px 2px #e6e6e6;
 	cursor: default;
 	.mask {
 		width: 300px;
@@ -203,18 +205,22 @@
 		transform: translate(200px, -200px);
 		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
+		font-family: "Didact Gothic", "Helvetica Neue", Helvetica, Arial, cursive;
 	}
 	p {
 		transform: translate(-200px, 200px);
 		-webkit-transform: translate(200px, -200px);
 		transition: all 0.2s ease-in-out;
 		-webkit-transition: all 0.2s ease-in-out;
+		font-family: "Didact Gothic", "Helvetica Neue", Helvetica, Arial, cursive;
+		font-size: 1.2em;
 	}
 	a.info {
 		transform: translate(0px, 100px);
 		-webkit-transform: translate(0px, 100px);
 		transition: all 0.2s 0.1s ease-in-out;
 		-webkit-transition: all 0.2s 0.1s ease-in-out;
+		 font-family: "Didact Gothic", "Helvetica Neue", Helvetica, Arial, cursive;
 	}
 	&:hover {
 		.mask {

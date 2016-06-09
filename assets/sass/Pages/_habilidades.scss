@@ -57,7 +57,7 @@
 		padding: 23px 35px;
 		border-radius: 100%;
 		&:hover {
-			background-image: url("../../img/fondopaint.png");
+			background-image: url("../../img/textura.jpg");
 			background-color: #ffffff;
 			color:#009ca8;
 			transition: 0.4s;
@@ -74,7 +74,7 @@
     display: inline-block;
     margin-top: -18px;
     &:hover{
-    	background-image: url("../../img/fondopaint.png");
+    	background-image: url("../../img/textura.jpg");
 		transition: 0.4s;    }
 }
 .img-responsive{
@@ -83,7 +83,7 @@
     height: auto;
 }
 .progresed-bar {
-	background-image: url("../../img/fondopaint.png");
+	background-image: url("../../img/textura.jpg.png");
 	background-color: #ffffff;
 	position: absolute;
 	height: 0.6em;

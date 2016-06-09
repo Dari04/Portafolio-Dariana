@@ -16,7 +16,7 @@
     this.y = y || canvas.height / 2;
     this.vx = (Math.random() * 10 - 3);
     this.vy = (Math.random() * 12 - 9);
-    this.color = "hsla( " + parseInt( Math.random() * 360)  + "  , 50%, 50%, .6)";
+    this.color = "#009ca8";
     particles[pIndex] = this;
     this.id = pIndex;
     pIndex++;
@@ -68,7 +68,7 @@
   });
 
   function loop(){
-    ctx.fillStyle = "#000000";
+    ctx.fillStyle = "#000";
     ctx.fillRect(0,0, canvas.width, canvas.height);
     for(var i=0; i<total; i++){
       new Particle();

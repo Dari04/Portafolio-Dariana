@@ -8,12 +8,13 @@
 }
 @mixin title-h1{	
 	    font-size: 1.9em;
-	    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+	    font-family: "Didact Gothic", "Helvetica Neue", Helvetica, Arial, cursive;
 	    width: 100%;
 	    letter-spacing: 2px;
 	    margin: 0 auto;
 	    max-width: 1250px;
 	    text-align: center;
 	    position: relative;
-	    bottom: 56px;
+	    bottom: 58px;
+	    font-weight:bold;
 }

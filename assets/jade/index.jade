@@ -9,6 +9,7 @@ html
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Ubuntu|Arimo|Poppins', type='text/css') 
     link(href='https://fonts.googleapis.com/css?family=Roboto:500|Didact+Gothic', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Roboto:500|Didact+Gothic|Architects+Daughter', rel='stylesheet', type='text/css')
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script" type='text/css')
     link(rel='icon', type='image/png', href='img/laptop-about.png')
     link(rel='stylesheet', href='assets/css/bootstrap.min.css')
     link(rel='stylesheet', href='assets/css/main.css')
@@ -29,17 +30,17 @@ html
                             span.icon-bar
                             .span.icon-bar
                             span.icon-bar
-                        a.navbar-brand(href="#") Dariana 
+                        a.navbar-brand(href='#') +D
                     #navbar.navbar-collapse.collapse
                         ul.nav.navbar-nav.navbar-right
                             li
-                                a(href="#") Sobre Mí
+                                a(href="#sobre") Sobre Mí
                             li
-                                a(href="#") Mi Portafolio
+                                a(href="#Portafolio") Mi Portafolio
                             li
-                                a(href="#") Habilidades
+                                a(href="#habilidades") Habilidades
                             li
-                                a(href="#") Contáctame
+                                a(href="#contactame") Contáctame
     section.background
         div.parent
             canvas
@@ -48,24 +49,67 @@ html
                 h1#holi 
                   | Yo soy 
                   span.txt-rotate(data-period='2000', data-rotate='[ "desarrolladora", " creativa", "mujer" ]')
-                a.animated.infinite.ion-android-arrow-dropdown-circle( href="#")
+                a.animated.infinite.ion-android-arrow-dropdown-circle( href="#sobre")
+    section#social
+        ul
+          li
+            a(href="https://www.facebook.com/pdariiana" target="_blank").ion-social-facebook
+          li
+            a(href="https://plus.google.com/u/0/110076452427834762187/posts" target="_blank").ion-social-googleplus
+          li 
+            a(href="https://github.com/Dari04" target="_blank").ion-social-github
+          li
+            a(href="https://www.facebook.com/pdariiana" target="_blank").ion-social-linkedin
     section#sobre
       .container-fluid
         .title
           h1 Sobre Mí
         .row
-          .col-md-6
-            img.me(src='img/yo.jpg')
-          .col-md-6
+          .col-md-7
+            figure.letters
+              figcaption.letters1
+                p
+                  span.gib Dariana Patiño
+                  |  Front-End Developer
+              img.me(src='img/yo.jpg')
+          .col-md-5
             p
-              |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est eos numquam ducimus, odit nam vel. Ipsam iusto a facilis sunt, dolorum, maxime ea voluptas esse ullam pariatur, maiores, quos.
-              |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est eos numquam ducimus, odit nam vel. Ipsam iusto a facilis sunt, dolorum, maxime ea voluptas esse ullam pariatur, maiores, quos.
-              |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est eos numquam ducimus, odit nam vel. Ipsam iusto a facilis sunt, dolorum, maxime ea voluptas esse ullam pariatur, maiores, quos.
+              | Hola soy Dariana Patiño, tengo 20 años ,soy egresada  de Desarrollo Web de Laboratoria.
+              | Tengo facilidad para trabajar en grupo, soy autodidacta, responsanble, full pilas y energía positiva al momento de trabajar, dando el 100% en cada trabajo.  
+    section#curriculum
+        .container-fluid
+          .title
+            h1 Curriculum Vitae
+          .component
+          ul.align
+            li
+              figure.book
+                // Front
+                ul.hardcover_front
+                  li
+                    .coverDesign.blue
+                  li
+                // Pages
+                ul.page
+                  li
+                  li
+                    a.btn(href='docs/CV Dariana.pdf') Descargar
+                  li
+                  li
+                  li
+                // Back
+                ul.hardcover_back
+                  li
+                  li
+                ul.book_spine
+                  li
+                  li
+                figcaption.one
+                  p Si deseas saber más sobre mi formación académica, abre el libro y descarga mi CV. 
     section#frase
       .opacity
         .container
-          h1.animated3.zoomIn
-            | Si se puede imaginar... se puede programar. Soy mujer y me apasiona la tecnología.
+          h1.animated3.zoomIn.word
     //-section#Portafolio
       .container-fluid
         .title
@@ -98,76 +142,84 @@ html
           h1 Mi Portafolio
         .controls
           label Filter:
-          button.filter(data-filter='all') All
-          button.filter(data-filter='.category-1') Category 1
-          button.filter(data-filter='.category-2') Category 2
+          button.filter(data-filter='all') Trabajos
+          button.filter(data-filter='.category-1') Html*Css - Jade*Sass
+          button.filter(data-filter='.category-2') Javascript*Jquery
         .pager-list
           // Pagination buttons will be generated here
         #Container.container
           .view.view-second
             .mix.category-1(data-myorder='1')
-              img.me(src='img/holi.jpg')
+              img.me(src='img/trabajo1.jpg')
               .mask
               .content
-                h2 hola
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
-                a.info(href='#') Read More   
+                h2 Agency Theme
+                p  Herramientas: Precompiladores Jade y Sass.
+                p  Páginas: 01.
+                a.info(href='https:///Dari04.github.io/Agency-theme/index.html') Click aquí  
           .view.view-second
             .mix.category-1(data-myorder='2')
-              img.me(src='img/holi.jpg')
+              img.me(src='img/trabajo2.jpg')
               .mask
               .content
-                h2 hola
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
-                a.info(href='#') Read More   
+                h2 Flat Theme
+                p  Herramientas: Precompiladores Jade y Sass.
+                p  Páginas: 05.
+                a.info(href=) Click aquí   
           .view.view-second
             .mix.category-1(data-myorder='3')
-              img.me(src='img/holi.jpg')
+              img.me(src='img/trabajo3.jpg')
               .mask
               .content
-                h2 hola
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
-                a.info(href='#') Read More   
+                h2 Grid System Responsive
+                p  Herramientas: HTML, CSS y Framework Bootstrap.
+                p  Páginas: 01.
+                a.info(href='https://Dari04.github.io/Grid-system-responsive/index.html') Click aquí   
           .view.view-second
-            .mix.category-2(data-myorder='4')
-              img.me(src='img/holi.jpg')
+            .mix.category-1(data-myorder='4')
+              img.me(src='img/trabajo4.jpg')
               .mask
               .content
-                h2 hola
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
-                a.info(href='#') Read More   
+                h2 Sentient Proyect
+                p  Herramientas:  HTML, CSS y Framework Materialized.
+                p  Páginas: 01.
+                a.info(href='https://dari04.github.io/Sentient-Proyect/index.html') Click aquí   
           .view.view-second
             .mix.category-1(data-myorder='5')
-              img.me(src='img/holi.jpg')
+              img.me(src='img/trabajo5.jpg')
               .mask
               .content
-                h2 hola
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
-                a.info(href='#') Read More   
+                h2 Responsive Flatness
+                p  Herramientas:  HTML, CSS y Framework Bootstrap.
+                p  Páginas: 01.
+                a.info(href='https://dari04.github.io/Responsive--blog/index.html') Click aquí   
           .view.view-second
             .mix.category-1(data-myorder='6')
-              img.me(src='img/holi.jpg')
+              img.me(src='img/trabajo6.jpg')
               .mask
               .content
-                h2 hola
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
-                a.info(href='#') Read More   
+                h2 Loveblog
+                p  Herramientas:  HTML, SASS y Framework Bootstrap.
+                p  Páginas: 05.
+                a.info(href='https://LoveBlog.github.io/Dari04/index.html') Click aquí   
           .view.view-second
             .mix.category-2(data-myorder='7')
-              img.me(src='img/holi.jpg')
+              img.me(src='img/trabajo7.jpg')
               .mask
               .content
-                h2 hola
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
-                a.info(href='#') Read More   
+                h2 TIC TAC TOE
+                p  Herramientas: HTML, CSS y Jquery.
+                p  Páginas: 01.
+                a.info(href='https://dari04.github.io/TIC-TAC-TOE/index.html') Click aquí   
           .view.view-second
             .mix.category-2(data-myorder='8')
-              img.me(src='img/holi.jpg')
+              img.me(src='img/trabajo8.jpg')
               .mask
               .content
-                h2 hola
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sed nostrum, repellendus quo aspernatur.
-                a.info(href='#') Read More   
+                h2 TODO APP
+                p  Herramientas: HTML, CSS y Javascript.
+                p  Páginas: 01.
+                a.info(href='https://dari04.github.io/TO-DO-APP/index.html') Click aquí   
           .gap
           .gap
     section#habilidades
@@ -189,7 +241,7 @@ html
                 i.ion-social-css3
                 h5.pt-5 CCS3
                 .progresed
-                  .progresed-indicator 70%
+                  .progresed-indicator 80%
                   .progresed-bar
                     .progresed-bar-complete(style='width:85%')
             .col-md-3.col-sm-4
@@ -197,7 +249,7 @@ html
                 i.ion-social-javascript.other-w
                 h5.pt-5 Javascript/Jquery
                 .progresed
-                  .progresed-indicator 30%
+                  .progresed-indicator 25%
                   .progresed-bar
                     .progresed-bar-complete(style='width:40%')
             .col-md-3.col-sm-4
@@ -214,7 +266,7 @@ html
                 i.ion-social-sass
                 h5.pt-5 SASS
                 .progresed
-                  .progresed-indicator 50%
+                  .progresed-indicator 70%
                   .progresed-bar
                     .progresed-bar-complete(style='width:67%')
             .col-md-3.col-sm-4
@@ -223,7 +275,7 @@ html
                   img.img-responsive(src='img/jade.png')
                 h5.pt-5.letter(style='margin-top: 4px;') JADE
                 .progresed
-                  .progresed-indicator 40%
+                  .progresed-indicator 60%
                   .progresed-bar
                     .progresed-bar-complete(style='width:64%')
             .col-md-3.col-sm-4
@@ -232,7 +284,7 @@ html
                   img.img-responsive(src='img/bootstrap.png')
                 h5.pt-5(style='margin-top: 4px;') Bootstrap/Responsive
                 .progresed
-                  .progresed-indicator 50%
+                  .progresed-indicator 75%
                   .progresed-bar
                     .progresed-bar-complete(style='width:80%')
             .col-md-3.col-sm-4
@@ -304,8 +356,11 @@ html
   script(src='http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js')
   script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
   script(src='js/index.js')
+  script(src='js/tipeo.js')
   script(src='js/canvas.js')
   script(src='js/maquina.js')
   script(src='js/menu-scroll.js')
+  script(src='js/cbpAnimatedHeader.js')
   script(src='js/bootstrap.min.js')
+  script(src='js/hover.js')
   script(src='js/cbpAnimated.js')

@@ -1,0 +1,45 @@
+#social{
+	position: fixed;
+	left: 0;
+	top:200px;
+	z-index: 2000;
+}
+#social{
+	ul {
+		list-style: none;
+		padding:0;
+		li{
+			 a{
+				display: inline-block;
+			    color: #fff;
+			    background: #000;
+			    padding-top: 9px;
+			    width: 42px;
+			    padding-bottom: 9px;
+			    text-decoration: none;
+			    -webkit-transition: all 500ms ease;
+			    -o-transition: all 500ms ease;
+			    transition: all 500ms ease;
+			    text-align: center;
+			    font-size: 1.35em;
+			}
+			.ion{
+				width: 50px;
+			}
+			a:hover{
+				padding: 10px 30px;
+				background:#009ca8;
+			}
+			.ion-social-facebook{
+				background: #3b5998;
+			}
+			.ion-social-googleplus{
+				background: #DC4A38;
+			}
+			.ion-social-linkedin{
+				background: #1060A6;
+			}
+
+		} 
+	}
+}

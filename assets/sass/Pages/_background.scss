@@ -7,15 +7,18 @@
 		width:100%;
 		}
 		.texto{
-			position: absolute;
-    		left: 390px;
-    		top: 220px;
+			    position: absolute;
+			    left: 0px;
+			    top: 216px;
+			    margin: auto;
+			    display: block;
+			    width: 100%;
 			#test{
 				color: white;
 			    text-align: center;
 			    position: relative;
-			    left: 15px;
-			    font-family: "Didact Gothic";
+			    left: 0px;
+			    font-family: "Kaushan Script";
 			    font-size: 6em;
 			    margin: auto;
 			    display: block;
@@ -26,17 +29,16 @@
 				    text-align: center;
 				    position: relative;
 				    left: 0;
-				    font-family:"Poppins";
+				    font-family: "Didact Gothic";
 				    font-size: 3em;
 			}
 					}
 	}
 }
 .ion-android-arrow-dropdown-circle{
-				    color: #ffffff;
+				color: #ffffff;
 			    text-decoration: none;
 			    font-size: 4em;
 			    position: relative;
-			    left: 256px;
-			    top: 109px;
+			    left: 664px;
 			}
